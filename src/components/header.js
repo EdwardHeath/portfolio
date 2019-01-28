@@ -14,7 +14,7 @@ const Header = ({ siteTitle }) => (
       style={{
         margin: `0 auto`,
         maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        padding: `1.45rem 1.0875rem 1rem`,
       }}
     >
       <h1 style={{ margin: 0, textAlign: 'center' }}>
@@ -28,15 +28,24 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
-      <Grid columns={'1fr 1fr 1fr'}>
+      <Grid style={{ marginTop: '20px' }} columns={'1fr 1fr 1fr'}>
         <Cell center={1}>
-          <Link to="/projects">Projects</Link>
+          <Link
+            style={{ color: `white`, textDecoration: `none` }}
+            to="/projects"
+          >
+            Projects
+          </Link>
         </Cell>
         <Cell center={1}>
-          <Link to="/about">About</Link>
+          <Link style={{ color: `white`, textDecoration: `none` }} to="/about">
+            About
+          </Link>
         </Cell>
         <Cell center={1}>
-          <Link to="/resume">Resume</Link>
+          <Link style={{ color: `white`, textDecoration: `none` }} to="/resume">
+            Resume
+          </Link>
         </Cell>
       </Grid>
     </div>
