@@ -1,11 +1,12 @@
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
+import { Grid, Cell } from 'styled-css-grid'
 
 const Header = ({ siteTitle }) => (
   <div
     style={{
-      background: `rebeccapurple`,
+      background: `red`,
       marginBottom: `1.45rem`,
     }}
   >
@@ -16,7 +17,7 @@ const Header = ({ siteTitle }) => (
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <h1 style={{ margin: 0, textAlign: 'center' }}>
         <Link
           to="/"
           style={{
@@ -27,6 +28,17 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
+      <Grid columns={'1fr 1fr 1fr'}>
+        <Cell center={1}>
+          <Link to="/projects">Projects</Link>
+        </Cell>
+        <Cell center={1}>
+          <Link to="/about">About</Link>
+        </Cell>
+        <Cell center={1}>
+          <Link to="/resume">Resume</Link>
+        </Cell>
+      </Grid>
     </div>
   </div>
 )
