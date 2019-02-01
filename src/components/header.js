@@ -29,7 +29,12 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
       <Grid style={{ marginTop: '20px' }} columns={'1fr 1fr 1fr'}>
-        <Cell center={1}>
+        <Cell center={true}>
+          <Link style={{ color: `white`, textDecoration: `none` }} to="/">
+            Home
+          </Link>
+        </Cell>
+        <Cell center={true}>
           <Link
             style={{ color: `white`, textDecoration: `none` }}
             to="/projects"
@@ -37,14 +42,9 @@ const Header = ({ siteTitle }) => (
             Projects
           </Link>
         </Cell>
-        <Cell center={1}>
+        <Cell center={true}>
           <Link style={{ color: `white`, textDecoration: `none` }} to="/about">
             About
-          </Link>
-        </Cell>
-        <Cell center={1}>
-          <Link style={{ color: `white`, textDecoration: `none` }} to="/resume">
-            Resume
           </Link>
         </Cell>
       </Grid>
