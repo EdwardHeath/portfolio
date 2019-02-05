@@ -28,7 +28,7 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
-      <Grid style={{ marginTop: '20px' }} columns={'1fr 1fr 1fr'}>
+      <Grid style={{ marginTop: '20px' }} columns={'1fr 1fr 1fr 1fr'}>
         <Cell center={true}>
           <Link style={{ color: `white`, textDecoration: `none` }} to="/">
             Home
@@ -40,6 +40,11 @@ const Header = ({ siteTitle }) => (
             to="/projects"
           >
             Projects
+          </Link>
+        </Cell>
+        <Cell center={true}>
+          <Link style={{ color: `white`, textDecoration: `none` }} to="/blog">
+            Blog
           </Link>
         </Cell>
         <Cell center={true}>

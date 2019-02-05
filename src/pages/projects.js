@@ -9,8 +9,8 @@ const Projects = () => (
     <h1>Projects</h1>
     <p>My projects will go here.</p>
     <p>All I have to do is add them.</p>
-    <Project title='calculator' />
-    <Project title='tic-tac-toe'/>
+    <Project title="Calculator" />
+    <Project title="Game Suite" />
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }} />
   </Layout>
 )

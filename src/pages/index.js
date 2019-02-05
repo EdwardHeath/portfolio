@@ -7,7 +7,11 @@ const IndexPage = () => (
   <Layout>
     <h1>Welcome</h1>
     <p>Welcome to my personal web development portfolio.</p>
-    <p>This is a work in progress and <em>should</em> be updated fairly regularly. Check back soon for fresh content.</p>
+    <p>
+      Established in February 2019, this is a work in progress and{' '}
+      <em>should</em> be updated fairly frequently. Check back regularly for
+      fresh content.
+    </p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }} />
   </Layout>
 )
