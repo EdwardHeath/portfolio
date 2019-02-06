@@ -1,3 +1,5 @@
+// This is just an example file to show styled components syntax
+
 import React from "react"
 import styled from "styled-components"
 
