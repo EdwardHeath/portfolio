@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 
 const GameSuite = () => (
   <div>
-    <Link to="./tic-tac-toe">Tic Tac Toe</Link>
+    {/* <Link to="./tic-tac-toe">Tic Tac Toe</Link> */}
   </div>
 )
 
