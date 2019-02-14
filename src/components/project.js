@@ -1,7 +1,5 @@
 import React from 'react'
-import logo from '../images/gatsby-icon.png'
 import styled from 'styled-components'
-import { Link } from 'gatsby'
 
 const ProjectWrapper = styled.div`
   display: flex;
@@ -12,21 +10,28 @@ const Title = styled.h2``
 const Description = styled.p``
 
 const Preview = styled.img`
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 150px;
   padding: 15px;
 `
+const Information = styled.div`
+  
+`
 
-const Information = styled.div``
+const Link = styled.a`
+  text-decoration: none;
+  color: black;
+`
 
-const Project = ({ title }) => (
+
+const Project = ({ title, logo, href, desc }) => (
   <ProjectWrapper>
-    <Preview src={logo} alt="placeholder image" />
+    <Preview src={logo} alt={`${title} screenshot`} />
     <Information>
-      <Link to='./game-suite'>
-      <Title>{title}</Title>
+      <Link href={href}>
+        <Title>{title}</Title>
       </Link>
-      <Description>This is my {title} project.</Description>
+      <Description>{desc}</Description>
     </Information>
   </ProjectWrapper>
 )
