@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import Game from './tic-tac-toe'
 
 const GameSuite = () => (

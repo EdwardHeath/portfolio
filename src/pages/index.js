@@ -14,10 +14,11 @@ const IndexPage = () => (
       are being updated with real content as I go.
     </p>
     <div>
-      <h3>Latest Update 2/5/19:</h3>
+      <h3>Latest Update 2/13/19:</h3>
       <p>
-        Blog is now live with my first post! Check it out{' '}
-        <Link to="/blog">here</Link>!
+        I have added my first Project!
+         Check it out{' '}
+        <Link to="/projects">here</Link>!
       </p>
     </div>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }} />
