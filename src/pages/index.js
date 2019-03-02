@@ -14,11 +14,11 @@ const IndexPage = () => (
       are being updated with real content as I go.
     </p>
     <div>
-      <h3>Latest Update 2/13/19:</h3>
+      <h3>Latest Update 3/1/19:</h3>
       <p>
-        I have added my first Project!
-         Check it out{' '}
-        <Link to="/projects">here</Link>!
+        I have refactored my blog to utilize the power of Gatsby! Now my site will
+        autmatically query content and create slugs, allowing me to chronicle my 
+        journey even easier. <Link to='./blog.js'>Enjoy!</Link>
       </p>
     </div>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }} />

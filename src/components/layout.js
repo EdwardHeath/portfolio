@@ -1,8 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import { css } from '@emotion/core'
-import { StaticQuery, graphql, Link } from 'gatsby'
-import { rhythm } from '../utils/typography'
+import { StaticQuery, graphql } from 'gatsby'
 import Header from './header'
 import './layout.css'
 
